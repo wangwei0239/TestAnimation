@@ -24,7 +24,7 @@ public class RatingView extends FrameLayout{
 
     private static final long ROTATING_ANIMATION_DURATION = 3000L;
 
-    private static final long RATING_ANIMATION_DURATION = 3000L;
+    private static final long RATING_ANIMATION_DURATION = 1000L;
 
     private static final long TEXT_ANIMATION_DURATION = 1000L;
 
@@ -82,7 +82,7 @@ public class RatingView extends FrameLayout{
     }
 
     private void initRotatingAnimation() {
-        rotateAnimator = ValueAnimator.ofFloat(0.0f, 360f * 3);
+        rotateAnimator = ValueAnimator.ofFloat(0.0f, 360f * 5);
         rotateAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
